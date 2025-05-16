@@ -77,12 +77,12 @@ const arrayImages = images.reduce((html, image) => {
                   </li>`);
 }, "");
 
-document
-  .querySelector("body")
-  .insertAdjacentHTML("afterbegin", '<ul class="gallery"></ul>');
+// document
+//   .querySelector("body")
+//   .insertAdjacentHTML("afterbegin", '<ul class="gallery"></ul>');
 
 const areaGallery = document.querySelector(".gallery");
-areaGallery.insertAdjacentHTML("afterbegin", arrayImages);
+areaGallery.insertAdjacentHTML("beforeend", arrayImages);
 
 // document
 //   .querySelector("body")
